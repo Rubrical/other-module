@@ -14,6 +14,6 @@ export class AboutComponent {
   constructor(private router: Router) {}
 
   goToHome() {
-    this.router.navigate(['/']);  // Navigate to the Home page
+    this.router.navigate(['/']);
   }
 }

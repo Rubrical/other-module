@@ -15,11 +15,11 @@ export class HomeComponent {
   constructor(private router: Router) {}
 
   goToAbout() {
-    this.router.navigate(['/about']);  // Navigate to the About page
+    this.router.navigate(['/about']);
   }
 
   backDashboard() {
-    let target = window.open("http://localhost:4200", "dashboard");
-    target?.postMessage("teste", "http://localhost:4200")
+    let target = window.open("http://localhost:4200/dashboard", "dashboard");
+    target?.focus();
   }
 }
